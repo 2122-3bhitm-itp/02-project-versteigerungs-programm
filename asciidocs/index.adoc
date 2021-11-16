@@ -16,6 +16,5 @@ ifdef::backend-html5[]
 
 == Header 1
 
-==Teo
 === Header 2
 
