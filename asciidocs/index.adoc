@@ -1,6 +1,6 @@
 = Our Project
 Jaklitsch Julian ,Weinhäupl Valentin, Scharrer Raphael, Mihaescu Teofan, Goldmann Pascal
-1.0.0, 2021-11-14:
+1.0.0, 2021-11-14
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -22,10 +22,10 @@ ifdef::backend-html5[]
     E-Mail-Adresse: t.stütz@htl-leonding.ac.at
 
 == Projekthintergrund
-    Auktionen gibt es in verschiedenen Erscheinungen. Bekannt ist vor allem die klassische Auktion, welche mit dem Auktionsgut und einem Auktionator vor Ort stattfindet. Durch aktuelle Covid 19 Umstände bietet es sich jedoch an die Online Auktion als Variante der Auktion vorzuziehen. Sie ist die förderlichste Form angepasst auf unsere Umstände.
+    Auktionen gibt es in verschiedenen Erscheinungen. Bekannt ist vor allem die klassische Auktion, welche mit dem Auktionsgut und einem Auktionator vor Ort stattfindet. Durch aktuelle Covid 19 Umstände bietet es sich jedoch an, die Online Auktion als Variante der Auktion vorzuziehen.
 
 == Projektergebnis
-    Das Endprodukt stellt einen Server zur Verfügung auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird auf ein Angebot, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin aber steht es den Konkurrenten frei ein höheres Angebot zu bieten. Sollte die Dauer zu Ende sein oder alle Konkurrenten des führenden Bieters sich dazu bekannt haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.
+    Das Endprodukt stellt einen Server zur Verfügung, auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin steht es dem Konkurrentem frei, den Gegenstand auf eine höhere Summe zu erbieten. Sollte die Dauer zu Ende sein, oder alle Konkurrenten sich entschieden haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.
 
 == Projektziel
 
@@ -36,14 +36,14 @@ ifdef::backend-html5[]
 == Freigaben
 
 == Projektstart
-    Information folgt durch Projektauftraggeber
+    Informationen erfolgen durch Projektauftraggeber
 
 == Projektende
-    Information folgt durch Projektauftraggeber
+    Informationen erfolgen durch Projektauftraggeber
 
 == Projektressourcen
 
-    Folgende Ressourcen wird mit der Entwicklungsumgebung IntelliJ verwendet:
+    Folgende Ressourcen werden mit der Entwicklungsumgebung IntelliJ verwendet:
 
 ----
 JavaFx
