@@ -1,5 +1,5 @@
-= Our Project
-Jaklitsch Julian ,Weinhäupl Valentin, Scharrer Raphael, Mihaescu Teofan, Goldmann Pascal
+= Projektauftrag
+Goldmann Pascal, Jaklitsch Julian, Mihaescu Teofan, Scharrer Raphael, Weinhäupl Valentin
 1.0.0, 2021-11-14
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
@@ -18,39 +18,48 @@ ifdef::backend-html5[]
     Auktionsprogramm
 
 == Projektauftraggeber
-    Thomas W. Stütz
+    Prof.Mag.Dr. Thomas W. Stütz
     E-Mail-Adresse: t.stütz@htl-leonding.ac.at
 
 == Projekthintergrund
     Auktionen gibt es in verschiedenen Erscheinungen. Bekannt ist vor allem die klassische Auktion, welche mit dem Auktionsgut und einem Auktionator vor Ort stattfindet. Durch aktuelle Covid 19 Umstände bietet es sich jedoch an, die Online Auktion als Variante der Auktion vorzuziehen.
 
 == Projektergebnis
-    Das Endprodukt stellt einen Server zur Verfügung, auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin steht es dem Konkurrentem frei, den Gegenstand auf eine höhere Summe zu erbieten. Sollte die Dauer zu Ende sein, oder alle Konkurrenten sich entschieden haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.
+    Das Endprodukt stellt einen Server zur Verfügung, auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin steht es dem Konkurrentem frei, das Auktionsgut auf eine höhere Summe zu erbieten. Sollte die Dauer zu Ende sein, oder alle Konkurrenten sich entschieden haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.
 
 == Projektziel
+    Ziel ist es eine benutzerfreundliche Oberfläche zu erstellen, die es einem leichter macht an Auktionen teilzunehmen
 
 == Projektbeschreibung
+    Der genaue Vorgang geschieht folgendermaßen: Vom Nutzer angebotenes Gut wird direkt vom Server in Empfang genommen und wird für andere Nutzer sichtbar.
+
+    Um die Nutzer eindeutig identifizieren zu können wird eine Anmeldung erforderlich sein. Profile speichert der Server ab.
+
+    Sichtbar werden Auktionen direkt bei Start (Hochladen des Auktionsguts) für alle Nutzer. Benachrichtigungen finden statt, wenn:
+
+    - der Höchstbietende überboten wird.
+    - die Auktionsdauer dem Ende nahekommt.
+    - die Auktion abgeschlossen wurde.
+
 
 == Meilenstein
-
-== Freigaben
-
-== Projektstart
-    Informationen erfolgen durch Projektauftraggeber
-
-== Projektende
-    Informationen erfolgen durch Projektauftraggeber
+    - Grundgerüst erstellen
+    - Accountsystem implementieren
+    - Implementierung der Anzeigen
+    - Eingabevalidierung (gültige E-Mail, gültiger Name, Auktionsgut)
+    - Server und Client Aufstellung
+    - Aktives Gebotssystem implementieren
+    - Kommunikation zwischen Server und Client
+    - Feinschliff und Design
 
 == Projektressourcen
-
     Folgende Ressourcen werden mit der Entwicklungsumgebung IntelliJ verwendet:
 
-----
-JavaFx
-Maven
-Socket
-JDBC
-----
+    - JavaFx
+    - Maven
+    - Socket
+    - JDBC
+
 
 
 
@@ -63,7 +72,13 @@ JDBC
 
 - Projektteam
 
-* Mihaescu Teofan
-* Weinhäupl Valentin
 * Goldmann Pascal
+* Mihaescu Teofan
 * Scharrer Raphael
+* Weinhäupl Valentin
+
+== Projektstart
+- Am 18.11.2021 beginnt das Projekt
+
+== Projektende
+    Informationen erfolgen durch Projektauftraggeber

@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<meta name="author" content="Jaklitsch Julian ,Weinhäupl Valentin, Scharrer Raphael, Mihaescu Teofan, Goldmann Pascal">
-<title>Our Project</title>
+<meta name="author" content="Goldmann Pascal, Jaklitsch Julian, Mihaescu Teofan, Scharrer Raphael, Weinhäupl Valentin">
+<title>Projektauftrag</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,9 +440,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Our Project</h1>
+<h1>Projektauftrag</h1>
 <div class="details">
-<span id="author" class="author">Jaklitsch Julian ,Weinhäupl Valentin, Scharrer Raphael, Mihaescu Teofan, Goldmann Pascal</span><br>
+<span id="author" class="author">Goldmann Pascal, Jaklitsch Julian, Mihaescu Teofan, Scharrer Raphael, Weinhäupl Valentin</span><br>
 <span id="revnumber">version 1.0.0,</span>
 <span id="revdate">2021-11-14</span>
 </div>
@@ -456,11 +456,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_projektziel">5. Projektziel</a></li>
 <li><a href="#_projektbeschreibung">6. Projektbeschreibung</a></li>
 <li><a href="#_meilenstein">7. Meilenstein</a></li>
-<li><a href="#_freigaben">8. Freigaben</a></li>
-<li><a href="#_projektstart">9. Projektstart</a></li>
-<li><a href="#_projektende">10. Projektende</a></li>
-<li><a href="#_projektressourcen">11. Projektressourcen</a></li>
-<li><a href="#_projektorganisation">12. Projektorganisation</a></li>
+<li><a href="#_projektressourcen">8. Projektressourcen</a></li>
+<li><a href="#_projektorganisation">9. Projektorganisation</a></li>
+<li><a href="#_projektstart">10. Projektstart</a></li>
+<li><a href="#_projektende">11. Projektende</a></li>
 </ul>
 </div>
 </div>
@@ -480,7 +479,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="literalblock">
 <div class="content">
-<pre>Thomas W. Stütz
+<pre>Prof.Mag.Dr. Thomas W. Stütz
 E-Mail-Adresse: t.stütz@htl-leonding.ac.at</pre>
 </div>
 </div>
@@ -501,7 +500,7 @@ E-Mail-Adresse: t.stütz@htl-leonding.ac.at</pre>
 <div class="sectionbody">
 <div class="literalblock">
 <div class="content">
-<pre>Das Endprodukt stellt einen Server zur Verfügung, auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin steht es dem Konkurrentem frei, den Gegenstand auf eine höhere Summe zu erbieten. Sollte die Dauer zu Ende sein, oder alle Konkurrenten sich entschieden haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.</pre>
+<pre>Das Endprodukt stellt einen Server zur Verfügung, auf welchem Nutzer ihre Angebote ablegen. Bei dem ersten Gebot, welches abgelegt wird, wird eine Auktion gestartet, welche nach einer vorgegebenen Zeit abläuft. Bis dahin steht es dem Konkurrentem frei, das Auktionsgut auf eine höhere Summe zu erbieten. Sollte die Dauer zu Ende sein, oder alle Konkurrenten sich entschieden haben kein Gebot mehr zu liefern, so wird das Auktionsgut an den höchst Bietenden verschrieben.</pre>
 </div>
 </div>
 </div>
@@ -509,67 +508,107 @@ E-Mail-Adresse: t.stütz@htl-leonding.ac.at</pre>
 <div class="sect1">
 <h2 id="_projektziel">5. Projektziel</h2>
 <div class="sectionbody">
-
+<div class="literalblock">
+<div class="content">
+<pre>Ziel ist es eine benutzerfreundliche Oberfläche zu erstellen, die es einem leichter macht an Auktionen teilzunehmen</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_projektbeschreibung">6. Projektbeschreibung</h2>
 <div class="sectionbody">
-
+<div class="literalblock">
+<div class="content">
+<pre>Der genaue Vorgang geschieht folgendermaßen: Vom Nutzer angebotenes Gut wird direkt vom Server in Empfang genommen und wird für andere Nutzer sichtbar.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Um die Nutzer eindeutig identifizieren zu können wird eine Anmeldung erforderlich sein. Profile speichert der Server ab.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Sichtbar werden Auktionen direkt bei Start (Hochladen des Auktionsguts) für alle Nutzer. Benachrichtigungen finden statt, wenn:</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>der Höchstbietende überboten wird.</p>
+</li>
+<li>
+<p>die Auktionsdauer dem Ende nahekommt.</p>
+</li>
+<li>
+<p>die Auktion abgeschlossen wurde.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_meilenstein">7. Meilenstein</h2>
 <div class="sectionbody">
-
+<div class="ulist">
+<ul>
+<li>
+<p>Grundgerüst erstellen</p>
+</li>
+<li>
+<p>Accountsystem implementieren</p>
+</li>
+<li>
+<p>Implementierung der Anzeigen</p>
+</li>
+<li>
+<p>Eingabevalidierung (gültige E-Mail, gültiger Name, Auktionsgut)</p>
+</li>
+<li>
+<p>Server und Client Aufstellung</p>
+</li>
+<li>
+<p>Aktives Gebotssystem implementieren</p>
+</li>
+<li>
+<p>Kommunikation zwischen Server und Client</p>
+</li>
+<li>
+<p>Feinschliff und Design</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_freigaben">8. Freigaben</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_projektstart">9. Projektstart</h2>
-<div class="sectionbody">
-<div class="literalblock">
-<div class="content">
-<pre>Informationen erfolgen durch Projektauftraggeber</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_projektende">10. Projektende</h2>
-<div class="sectionbody">
-<div class="literalblock">
-<div class="content">
-<pre>Informationen erfolgen durch Projektauftraggeber</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_projektressourcen">11. Projektressourcen</h2>
+<h2 id="_projektressourcen">8. Projektressourcen</h2>
 <div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre>Folgende Ressourcen werden mit der Entwicklungsumgebung IntelliJ verwendet:</pre>
 </div>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre>JavaFx
-Maven
-Socket
-JDBC</pre>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JavaFx</p>
+</li>
+<li>
+<p>Maven</p>
+</li>
+<li>
+<p>Socket</p>
+</li>
+<li>
+<p>JDBC</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_projektorganisation">12. Projektorganisation</h2>
+<h2 id="_projektorganisation">9. Projektorganisation</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -588,21 +627,43 @@ JDBC</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Mihaescu Teofan</p>
-</li>
-<li>
-<p>Weinhäupl Valentin</p>
-</li>
-<li>
 <p>Goldmann Pascal</p>
 </li>
 <li>
+<p>Mihaescu Teofan</p>
+</li>
+<li>
 <p>Scharrer Raphael</p>
+</li>
+<li>
+<p>Weinhäupl Valentin</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projektstart">10. Projektstart</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Am 18.11.2021 beginnt das Projekt</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projektende">11. Projektende</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Informationen erfolgen durch Projektauftraggeber</pre>
+</div>
 </div>
 </div>
 </div>
@@ -610,7 +671,7 @@ JDBC</pre>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2021-11-17 20:37:31 +0100
+Last updated 2021-11-17 22:01:34 +0100
 </div>
 </div>
 </body>
