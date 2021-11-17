@@ -38,5 +38,14 @@ ifdef::backend-html5[]
 
 == Projektorganisation
 
+- Projektleiter
+
+* Jaklitsch Julian
 
 
+- Projektteam
+
+* Mihaescu Teofan
+* Weinhäupl Valentin
+* Goldmann Pascal
+* Scharrer Raphael
