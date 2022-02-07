@@ -15,7 +15,7 @@ ifdef::backend-html5[]
 //toc::[]
 
 == Projektbezeichnung
-    Auktionsprogramm, lolol
+    Auktionsprogramm, lololhjb
 
 == Projektauftraggeber
     Prof.Mag.Dr. Thomas W. Stütz
