@@ -43,7 +43,6 @@ AnzeigeNr
 == Klassen Diagramm
 
 [plantuml, Klassen.puml, svg]
-
 ----
 
 ----
@@ -68,3 +67,4 @@ Benutzer -- buy
 
 besitzer -- cut
 ----
+
