@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+rectangle Versteigerunsprogramm{
+usecase "Geld verdienen durch Verkauf" as sell
+usecase "Anteil des Verkaufs einnehmen" as cut
+usecase "Produkte ersteigern" as buy
+
+}
+
+actor Benutzer
+actor "Programm Besitzer" as besitzer
+
+Benutzer -- sell
+Benutzer -- buy
+
+besitzer -- cut
+@enduml
