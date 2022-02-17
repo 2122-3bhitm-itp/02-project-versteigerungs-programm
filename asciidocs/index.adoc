@@ -87,17 +87,4 @@ link:planung/Planung.adoc[PUML-Files]
 == Projektende
     Informationen erfolgen durch Projektauftraggeber
 
-== Klassendiagramm
-
-[plantuml, Klassendiagramm]
-----
-include::../planung/ERD.puml[]
-----
-
-== Anwendungsfalldiagramm
-
-[plantuml, Usecase]
-----
-include::../planung/UsecaseDiagram.puml[]
-----
 
