@@ -1,6 +1,6 @@
 = Planung Diagramme
 
-== Entitty Relationship Diagram
+== Entity Relationship Diagram
 [plantuml, ERD.puml, svg]
 
 ----
@@ -15,6 +15,7 @@ include::Klassen.puml[]
 ----
 
 == Usecase Diagram
+
 [plantuml, UsecaseDiagram.puml, svg]
 ----
 include::UsecaseDiagram.puml[]

@@ -14,8 +14,12 @@ ifdef::backend-html5[]
 // print the toc here (not at the default position)
 //toc::[]
 
+== Klassendiagramme
+
+link:planung/Planung.adoc[PUML-Files]
+
 == Projektbezeichnung
-    Auktionsprogramm, lolol
+    Auktionsprogramm
 
 == Projektauftraggeber
     Prof.Mag.Dr. Thomas W. Stütz
