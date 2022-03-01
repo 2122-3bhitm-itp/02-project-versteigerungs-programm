@@ -12,7 +12,7 @@ ifndef::imagesdir[:imagesdir: images]
 ifdef::backend-html5[]
 
 // print the toc here (not at the default position)
-//toc::[]
+
 
 == Klassendiagramme
 
