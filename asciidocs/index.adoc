@@ -87,4 +87,72 @@ link:planung/Planung.adoc[PUML-Files]
 == Projektende
     Informationen erfolgen durch Projektauftraggeber
 
+= Planung Diagramme
 
+== Entitty Relationship Diagram
+[plantuml, ERD.puml, svg]
+
+----
+'https://plantuml.com/class-diagram
+class Anzeige{
+AnzeigeNr
+BenutzerNr
+Preis
+Titel
+Beschreibung
+}
+
+class Benutzer{
+BenutzerNr
+BenutzerName
+Passwort
+}
+
+class Warenkorb{
+WarenkorbNr
+BenutzerNr
+}
+Anzeige "*" -- "1" Benutzer
+
+Warenkorb "1" -- "1"Benutzer
+
+Warenkorb"*" -- "*"Anzeige
+
+
+(Warenkorb, Anzeige) ... Kauf
+
+class Kauf{
+KaufNr
+WarenkorbNr
+AnzeigeNr
+}
+
+----
+
+== Klassen Diagramm
+
+[plantuml, Klassen.puml, svg]
+----
+
+----
+
+== Usecase Diagram
+[plantuml, UsecaseDiagram.puml, svg]
+----
+'https://plantuml.com/sequence-diagram
+
+rectangle Versteigerunsprogramm{
+usecase "Geld verdienen durch Verkauf" as sell
+usecase "Anteil des Verkaufs einnehmen" as cut
+usecase "Produkte ersteigern" as buy
+
+}
+
+actor Benutzer
+actor "Programm Besitzer" as besitzer
+
+Benutzer -- sell
+Benutzer -- buy
+
+besitzer -- cut
+----
