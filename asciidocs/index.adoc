@@ -145,11 +145,6 @@ class Produkt{
     int neuwert;
 }
 
-class Preis{
-    int startpreis;
-    void bieten();
-}
-
 class Bieter{
     String username
 }
@@ -158,13 +153,15 @@ class Verkäufer{
     String name;
 }
 
+class Gebot{
+    int preis
+}
+
 Anzeige "*" -- "1" Produkt
 
 Anzeige "*" -- "1"Verkäufer
 
 Anzeige"1" -- "1"Bieter
-
-Anzeige "1" -- "1" Preis
 
 (Anzeige, Bieter) ... Gebot
 
