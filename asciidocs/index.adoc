@@ -89,7 +89,7 @@ link:planung/Planung.adoc[PUML-Files]
 
 = Planung Diagramme
 
-== Entitty Relationship Diagram
+== Entity Relationship Diagram
 [plantuml, ERD.puml, svg]
 
 ----
@@ -136,8 +136,8 @@ AnzeigeNr
 'https://plantuml.com/class-diagram
 
 class Anzeige{
-    Date Startdatum;
-    Date Enddatum;
+    Date startDate;
+    Date endDate;
 }
 
 class Produkt{
@@ -146,7 +146,7 @@ class Produkt{
 }
 
 class Bieter{
-    String username
+    String username;
 }
 
 class Verkäufer{
@@ -154,7 +154,7 @@ class Verkäufer{
 }
 
 class Gebot{
-    int preis
+    int price;
 }
 
 Anzeige "*" -- "1" Produkt
