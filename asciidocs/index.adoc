@@ -87,7 +87,7 @@ link:planung/Planung.adoc[PUML-Files]
 == Projektende
     Informationen erfolgen durch Projektauftraggeber
 
-= Planung Diagramme
+== Planung Diagramme
 
 == Entity Relationship Diagram
 [plantuml, ERD.puml, svg]
@@ -186,4 +186,68 @@ Benutzer -- sell
 Benutzer -- buy
 
 besitzer -- cut
+----
+
+== Pflichtenheft "Was mache ich"
+
+
+=== Ausgangssituation
+
+Heutzutage sind Flohmärkte und Auktion Möglichkeiten alte Wertsachen zu versteigern/verkaufen/erwerben.
+
+=== Istzustand
+----
+Wegen der Pandemie, die anscheinend kein Ende hat, fehlt uns die Möglichkeit an Flohmärkten und Auktionen ohne Risiko teilzunehmen.
+----
+=== Problemstellung
+Käufer und Verkäufer können vielen Seiten nicht vertrauen.
+
+=== Aufgabenstellung
+Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
+
+==== Funktionale Anforderungen
+- Wertsachen können zur Auktion aufgestellt werden
+- Teilnahme und Austritt an einer Auktion
+- Transaktionen können nachverfolgt werden, um Scams zu vermeiden
+
+==== Nichtfunktionale Anforderungen (NFA)
+- Sicherheit
+- Benutzerfreundlichkeit
+- Zuverlässigkeit
+
+=== Ziele
+- Benutzer Vertrauen geben
+- Vorgehensziel: Übung mit dem Development-Prozess sammeln
+
+=== Mengengerüst
+
+
+=== Rahmenbedingungen
+- funktionsfähige Auktionen
+
+zB Vorgaben vom Auftraggeber
+
+== Entwurf "Wie mache ich es"
+- JavaFX
+- DerbyDB
+
+=== Systemarchitektur
+=== ...
+
+== Projekthandbuch "Organisatorische Rahmenbedingungen"
+
+=== GANTT-Diagramm
+
+mit User-Stories (definiert in YouTrack)
+
+[plantuml,gantt-protoype,png]
+----
+@startuml
+[Test prototype] lasts 10 days
+[Prototype completed] happens at [Test prototype]'s end
+[Setup assembly line] lasts 12 days
+[Setup assembly line] starts at [Test prototype]'s end
+[Test prototype 2] lasts 3 days
+[Test prototype 2] starts at [Prototype completed]'s end
+@enduml
 ----
