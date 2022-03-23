@@ -224,30 +224,6 @@ Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
 
 === Rahmenbedingungen
 - funktionsfähige Auktionen
+- Vorgaben vom Auftraggeber
 
-zB Vorgaben vom Auftraggeber
 
-== Entwurf "Wie mache ich es"
-- JavaFX
-- DerbyDB
-
-=== Systemarchitektur
-=== ...
-
-== Projekthandbuch "Organisatorische Rahmenbedingungen"
-
-=== GANTT-Diagramm
-
-mit User-Stories (definiert in YouTrack)
-
-[plantuml,gantt-protoype,png]
-----
-@startuml
-[Test prototype] lasts 10 days
-[Prototype completed] happens at [Test prototype]'s end
-[Setup assembly line] lasts 12 days
-[Setup assembly line] starts at [Test prototype]'s end
-[Test prototype 2] lasts 3 days
-[Test prototype 2] starts at [Prototype completed]'s end
-@enduml
-----
