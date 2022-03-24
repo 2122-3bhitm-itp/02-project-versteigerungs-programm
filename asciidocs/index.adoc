@@ -135,35 +135,35 @@ AnzeigeNr
 ----
 'https://plantuml.com/class-diagram
 
-class Anzeige{
+class Register{
     Date startDate;
     Date endDate;
 }
 
-class Produkt{
+class Product{
     String name;
-    int neuwert;
+    int newValue;
 }
 
-class Bieter{
+class Tenderer{
     String username;
 }
 
-class Verkäufer{
+class Salesperson{
     String name;
 }
 
-class Gebot{
+class Offer{
     int price;
 }
 
-Anzeige "*" -- "1" Produkt
+Register"*" -- "1" Product
 
-Anzeige "*" -- "1"Verkäufer
+Register"*" -- "1"Salesperson
 
-Anzeige"1" -- "1"Bieter
+Register"1" -- "1"Tenderer
 
-(Anzeige, Bieter) ... Gebot
+(Register, Tenderer) ... Offer
 
 ----
 
