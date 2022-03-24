@@ -219,9 +219,6 @@ Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
 - Benutzer Vertrauen geben
 - Vorgehensziel: Übung mit dem Development-Prozess sammeln
 
-=== Mengengerüst
-
-
 === Rahmenbedingungen
 - funktionsfähige Auktionen
 - Vorgaben vom Auftraggeber
