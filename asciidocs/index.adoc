@@ -90,10 +90,12 @@ link:planung/Planung.adoc[PUML-Files]
 == Planung Diagramme
 
 == Entity Relationship Diagram
+
 [plantuml, ERD.puml, svg]
 
 ----
 'https://plantuml.com/class-diagram
+left to right direction
 class Anzeige{
 AnzeigeNr
 BenutzerNr
