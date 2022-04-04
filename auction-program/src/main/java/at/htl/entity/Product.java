@@ -1,4 +1,4 @@
-package com.example.versteigerungs_programm;
+package at.htl.entity;
 
 import java.util.List;
 
@@ -6,7 +6,6 @@ public class Product {
     String name;
     int newValue;
     List<Register>bidders;
-
 
     public Product(String name, int newValue) {
         this.name = name;

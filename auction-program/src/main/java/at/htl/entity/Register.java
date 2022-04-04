@@ -1,4 +1,4 @@
-package com.example.versteigerungs_programm;
+package at.htl.entity;
 
 import java.util.LinkedList;
 import java.util.List;
