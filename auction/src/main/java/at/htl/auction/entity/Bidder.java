@@ -1,8 +1,8 @@
-package at.htl.entity;
+package at.htl.auction.entity;
 
 import java.util.List;
 
-public class Tenderer {
+public class Bidder {
     String username;
     List<Offer> offers;
 

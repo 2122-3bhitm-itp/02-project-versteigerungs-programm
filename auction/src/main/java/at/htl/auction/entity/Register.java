@@ -1,4 +1,4 @@
-package at.htl.entity;
+package at.htl.auction.entity;
 
 import java.util.LinkedList;
 import java.util.List;
