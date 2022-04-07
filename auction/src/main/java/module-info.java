@@ -1,7 +1,7 @@
 module at.htl.auction {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires java.sql;
 
     opens at.htl.auction to javafx.fxml;
     exports at.htl.auction;

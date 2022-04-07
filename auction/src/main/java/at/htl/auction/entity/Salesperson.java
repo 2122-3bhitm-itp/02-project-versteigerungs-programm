@@ -1,13 +1,8 @@
 package at.htl.auction.entity;
 
-import java.util.List;
+import java.util.LinkedList;
 
 public class Salesperson {
     String name;
-    Register register;
-
-    public Salesperson(String name, Register register) {
-        this.name = name;
-        this.register = register;
-    }
+    LinkedList<Auction> auctions;
 }
