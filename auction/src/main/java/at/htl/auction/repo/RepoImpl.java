@@ -11,9 +11,10 @@ public class RepoImpl implements Repo{
     public RepoImpl() throws SQLException {
     }
 
+
     @Override
-    public void addauction() throws SQLException {
-        PreparedStatement pstmt = conn.prepareStatement("create table temp(id varchar(12) primary key)");
-        pstmt.executeQuery();
+    public void addauction(String name, String price) throws SQLException {
+        PreparedStatement pstmt = conn.prepareStatement("insert into anzeige (anzeigenr, titel, preis) values(1, '"+ name +"', "+ Double.valueOf(price) +")");
+        pstmt.executeUpdate();
     }
 }
