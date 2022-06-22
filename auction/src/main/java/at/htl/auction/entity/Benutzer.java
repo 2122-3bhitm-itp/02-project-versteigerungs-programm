@@ -3,22 +3,17 @@ package at.htl.auction.entity;
 import java.util.ArrayList;
 
 public class Benutzer {
-    private int BenutzerNr;
     private String benutzername;
     private String passwort;
 
     ArrayList<Gebot> gebote = new ArrayList<Gebot>();
     ArrayList<Anzeige> anzeigen = new ArrayList<>();
 
-    public Benutzer(int benutzerNr, String benutzername, String passwort) {
-        BenutzerNr = benutzerNr;
+    public Benutzer(String benutzername, String passwort) {
         this.benutzername = benutzername;
         this.passwort = passwort;
     }
 
-    public int getBenutzerNr() {
-        return BenutzerNr;
-    }
 
     public String getBenutzername() {
         return benutzername;
@@ -34,5 +29,13 @@ public class Benutzer {
 
     public ArrayList<Anzeige> getAnzeigen() {
         return anzeigen;
+    }
+
+    @Override
+    public String toString() {
+        return "Benutzer{" +
+                "benutzername='" + benutzername + '\'' +
+                ", passwort='" + passwort + '\'' +
+                '}';
     }
 }

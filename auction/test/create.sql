@@ -1,8 +1,7 @@
 create table BENUTZER
 (
-    BENUTZERNR   INTEGER not null
+    BENUTZERNAME VARCHAR(20) not null
         primary key,
-    BENUTZERNAME VARCHAR(20),
     PASSWORT     VARCHAR(35)
 );
 
@@ -10,7 +9,7 @@ create table ANZEIGE
 (
     ANZEIGENR    INTEGER not null
         primary key,
-    VERKAEUFERNR INTEGER
+    Benutzername varchar(20)
         references BENUTZER,
     PREIS        DOUBLE,
     TITEL        VARCHAR(20),
@@ -23,7 +22,7 @@ create table GEBOT
         primary key,
     ANZEIGENR     INTEGER
         references ANZEIGE,
-    BIETERNR      INTEGER
+    BIETER      varchar(20)
         references BENUTZER,
     "GebotsPreis" DOUBLE
 );
