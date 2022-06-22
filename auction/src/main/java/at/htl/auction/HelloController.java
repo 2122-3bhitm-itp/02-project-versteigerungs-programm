@@ -90,4 +90,16 @@ public class HelloController {
         repo.addauction(name.getText(), preis.getText());
         //
     }
+
+
+    //SHOW
+    Stage mainstage = new Stage();
+    public void showlogin() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        mainstage.setTitle("Auction");
+        mainstage.setScene(scene);
+        mainstage.show();
+    }
+
 }
