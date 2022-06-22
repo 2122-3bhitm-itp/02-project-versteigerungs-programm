@@ -1,32 +1,40 @@
 package at.htl.auction;
 
+import at.htl.auction.entity.Anzeige;
 import at.htl.auction.entity.Benutzer;
 import at.htl.auction.repo.RepoImpl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.LinkedList;
 
 public class HelloController {
+
+
     public HelloController() throws SQLException {
     }
+
     public static Benutzer login;
     public Text registerstatus;
     public Text loginstatus;
 
     RepoImpl repo = new RepoImpl();
 
-    Stage poststage = new Stage();
-    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("create-post.fxml"));
 
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("create-post.fxml"));
+
+    @FXML
+    private FlowPane container;
         @FXML
         private PasswordField loginpwd;
 
@@ -41,6 +49,11 @@ public class HelloController {
 
         @FXML
         private TextField registerusername;
+
+  /*  @FXML
+    public void initialize(){
+        this.container = new FlowPane();
+    }*/
 
         @FXML
         void login(ActionEvent event) throws SQLException, IOException {
@@ -80,29 +93,40 @@ public class HelloController {
 
 
 
-
+    Scene scene;
+    Stage poststage = new Stage();
     public void upload(ActionEvent actionEvent) throws SQLException, IOException {
-        Scene scene = new Scene(fxmlLoader.load());
+        scene = new Scene(fxmlLoader.load());
         poststage.setTitle("Create Auction");
         poststage.setScene(scene);
         poststage.show();
     }
 
     public void post(ActionEvent actionEvent) throws SQLException {
-        System.out.println("upload");
         repo.addauction(name.getText(), preis.getText(), this.login);
+        System.out.println("upload");
+        poststage.close();
         //
     }
 
 
     //SHOW
     Stage mainstage = new Stage();
-    public void showmain() throws IOException {
+    public void showmain() throws IOException, SQLException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         mainstage.setTitle("Auction");
         mainstage.setScene(scene);
         mainstage.show();
+
+        LinkedList<Anzeige> anzeigen = repo.anzeigen();
+        for(int i = 0; i < anzeigen.size(); i++){
+            System.out.println(anzeigen.get(i));
+            Button tempbutton = new Button(anzeigen.get(i).getTitel());
+
+            container.getChildren().addAll(tempbutton);
+        }
     }
+
 
 }

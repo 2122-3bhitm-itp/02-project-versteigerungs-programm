@@ -20,7 +20,8 @@ create table ANZEIGE
 create table GEBOT
 (
     GEBOTNR       INTEGER not null
-        primary key,
+        primary key
+        generated always as identity,
     ANZEIGENR     INTEGER
         references ANZEIGE,
     BIETER      varchar(20)

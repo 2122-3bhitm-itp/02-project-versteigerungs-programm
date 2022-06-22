@@ -1,8 +1,10 @@
 package at.htl.auction.repo;
 
+import at.htl.auction.entity.Anzeige;
 import at.htl.auction.entity.Benutzer;
 
 import java.sql.*;
+import java.util.LinkedList;
 
 public class RepoImpl implements Repo{
     Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/db;create=true", "app", "app");
@@ -39,5 +41,20 @@ public class RepoImpl implements Repo{
         insert.executeUpdate();
 
         return new Benutzer(username, password);
+    }
+
+    public LinkedList<Anzeige> anzeigen () throws SQLException {
+        LinkedList<Anzeige> temp = new LinkedList<>();
+
+        PreparedStatement pstmt = conn.prepareStatement("select * from ANZEIGE");
+        ResultSet rs = pstmt.executeQuery();
+
+        while(rs.next()){
+            Anzeige tempanz = new Anzeige(rs.getInt("Anzeigenr"), rs.getDouble("preis"), rs.getString("titel"), rs.getString("beschreibung"));
+            temp.add(tempanz);
+        }
+
+        return temp;
+
     }
 }

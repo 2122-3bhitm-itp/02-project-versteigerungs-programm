@@ -28,4 +28,14 @@ public class Anzeige {
     public String getBeschreibung() {
         return Beschreibung;
     }
+
+    @Override
+    public String toString() {
+        return "Anzeige{" +
+                "AnzeigeNr=" + AnzeigeNr +
+                ", preis=" + preis +
+                ", titel='" + titel + '\'' +
+                ", Beschreibung='" + Beschreibung + '\'' +
+                '}';
+    }
 }
