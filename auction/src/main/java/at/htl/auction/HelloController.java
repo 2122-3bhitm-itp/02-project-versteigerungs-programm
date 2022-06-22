@@ -4,6 +4,7 @@ import at.htl.auction.entity.Anzeige;
 import at.htl.auction.entity.Benutzer;
 import at.htl.auction.repo.RepoImpl;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -116,14 +118,27 @@ public class HelloController {
         mainstage.setScene(scene);
         mainstage.show();
 
-        LinkedList<Anzeige> anzeigen = repo.anzeigen();
+
+    }
+
+    LinkedList<Anzeige> anzeigen;
+    public void update(ActionEvent actionEvent) throws SQLException {
+        this.anzeigen = repo.anzeigen();
         for(int i = 0; i < anzeigen.size(); i++){
             System.out.println(anzeigen.get(i));
             Button tempbutton = new Button(anzeigen.get(i).getTitel());
+            tempbutton.setPrefSize(300,300);
+            tempbutton.setFont(new Font(46));
+            tempbutton.setOnAction(openpost(i));
 
-            System.out.println(container.getChildren());
+            container.getChildren().add(tempbutton);
         }
+        //Button tempbutton = new Button("asdflkjödfsajlökakl");
+
     }
 
-
+    public EventHandler openpost(int index){
+        System.out.println(index);
+        return null;
+    }
 }
