@@ -16,7 +16,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class HelloController {
-    public Benutzer login;
+    public HelloController() throws SQLException {
+    }
+    public static Benutzer login;
     public Text registerstatus;
     public Text loginstatus;
 
@@ -41,24 +43,26 @@ public class HelloController {
         private TextField registerusername;
 
         @FXML
-        void login(ActionEvent event) throws SQLException {
+        void login(ActionEvent event) throws SQLException, IOException {
             Benutzer temp = repo.login(loginusername.getText(), loginpwd.getText());
             if(temp == null){
                 loginstatus.setText("User doesn't exist, or password is false");
             }else{
                 this.login = temp;
+                showmain();
                 System.out.println(temp);
             }
         }
 
         @FXML
-        void register(ActionEvent event) throws SQLException {
+        void register(ActionEvent event) throws SQLException, IOException {
             if(registerpwd1.getText().equals(registerpwd2.getText())){
                 Benutzer temp = repo.register(registerusername.getText(), registerpwd1.getText());
                 if(temp == null){
                     registerstatus.setText("User already exists");
                 }else{
                     this.login = temp;
+                    showmain();
                     System.out.println(this.login);
                 }
             }else{
@@ -73,11 +77,9 @@ public class HelloController {
     @FXML
     private TextField preis;
 
-    public HelloController() throws SQLException {
-    }
 
-    public void find(ActionEvent actionEvent) {
-    }
+
+
 
     public void upload(ActionEvent actionEvent) throws SQLException, IOException {
         Scene scene = new Scene(fxmlLoader.load());
@@ -87,14 +89,15 @@ public class HelloController {
     }
 
     public void post(ActionEvent actionEvent) throws SQLException {
-        repo.addauction(name.getText(), preis.getText());
+        System.out.println("upload");
+        repo.addauction(name.getText(), preis.getText(), this.login);
         //
     }
 
 
     //SHOW
     Stage mainstage = new Stage();
-    public void showlogin() throws IOException {
+    public void showmain() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         mainstage.setTitle("Auction");

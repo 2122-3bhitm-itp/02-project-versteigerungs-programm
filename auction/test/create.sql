@@ -8,7 +8,8 @@ create table BENUTZER
 create table ANZEIGE
 (
     ANZEIGENR    INTEGER not null
-        primary key,
+        primary key
+        generated always as identity ,
     Benutzername varchar(20)
         references BENUTZER,
     PREIS        DOUBLE,

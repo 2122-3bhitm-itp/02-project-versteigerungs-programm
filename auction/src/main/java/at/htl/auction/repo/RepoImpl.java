@@ -11,9 +11,9 @@ public class RepoImpl implements Repo{
     }
 
     @Override
-    public void addauction(String name, String price) throws SQLException {
-        //PreparedStatement pstmt = conn.prepareStatement("create table temp(id varchar(12) primary key)");
-        //pstmt.executeQuery();
+    public void addauction(String name, String price, Benutzer benutzer) throws SQLException {
+        PreparedStatement insert = conn.prepareStatement("insert into ANZEIGE(BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG) values('"+benutzer.getBenutzername()+"', "+price+", '"+name+"', 'adsfasdf')");
+        insert.executeUpdate();
     }
 
     public Benutzer login(String username, String password) throws SQLException {
