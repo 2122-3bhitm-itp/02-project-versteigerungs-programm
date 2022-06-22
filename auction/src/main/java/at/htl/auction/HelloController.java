@@ -90,9 +90,6 @@ public class HelloController {
     @FXML
     private TextField preis;
 
-
-
-
     Scene scene;
     Stage poststage = new Stage();
     public void upload(ActionEvent actionEvent) throws SQLException, IOException {
@@ -124,7 +121,7 @@ public class HelloController {
             System.out.println(anzeigen.get(i));
             Button tempbutton = new Button(anzeigen.get(i).getTitel());
 
-            container.getChildren().addAll(tempbutton);
+            System.out.println(container.getChildren());
         }
     }
 
