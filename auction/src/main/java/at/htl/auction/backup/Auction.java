@@ -1,6 +1,5 @@
-package at.htl.auction.entity;
+package at.htl.auction.backup;
 
-import java.util.LinkedList;
 import java.util.List;
 
 public class Auction {

@@ -1,4 +1,4 @@
-package at.htl.auction.entity;
+package at.htl.auction.backup;
 
 public class Offer {
     int price;

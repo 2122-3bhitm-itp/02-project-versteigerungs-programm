@@ -1,4 +1,4 @@
-package at.htl.auction.entity;
+package at.htl.auction.backup;
 
 import java.util.List;
 

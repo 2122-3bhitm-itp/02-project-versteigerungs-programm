@@ -7,4 +7,6 @@ module at.htl.auction {
     exports at.htl.auction;
     exports at.htl.auction.entity;
     opens at.htl.auction.entity to javafx.fxml;
+    exports at.htl.auction.backup;
+    opens at.htl.auction.backup to javafx.fxml;
 }
