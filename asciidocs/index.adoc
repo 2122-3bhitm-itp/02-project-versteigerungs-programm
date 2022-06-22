@@ -226,26 +226,3 @@ Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
 - Vorgaben vom Auftraggeber
 
 
-== Doku
-
-
-=== Start
-Wenn man das Programm startet, erscheint ein Fenster wo man sich entweder registrieren, oder wenn man dies schon mal gemacht hat, anmelden kann.
-[.clearfix]
---
-[.left]
-image::img1.png[align="center"]
-[.left]
-image::img2.png[align="center"]
---
-
-=== Registrieren/Login
-Sobald man auf den "Register" Button klickt, oder natürlich auf den Login Button, erscheint eine neue Stage.
-
-image::img3.png[align="center"]
-
-
-=== Main-Stage
-Hier sieht man die Main-Stage des Programmes, wo der Benutzer Auktionen sehen kann oder auch eigene hinzufügen kann.
-
-image::img4.png[align="center"]
