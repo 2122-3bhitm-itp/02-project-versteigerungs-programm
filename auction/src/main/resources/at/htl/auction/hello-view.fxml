@@ -14,42 +14,33 @@
    <children>
       <GridPane prefHeight="197.0" prefWidth="1920.0">
         <columnConstraints>
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="628.0" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1280.0" minWidth="10.0" prefWidth="1280.0" />
           <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Auction">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Auction" GridPane.columnIndex="1">
                <font>
                   <Font name="System Bold" size="69.0" />
                </font>
             </Text>
-            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#upload" prefHeight="100.0" prefWidth="100.0" text="+" GridPane.columnIndex="1">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#upload" prefHeight="100.0" prefWidth="100.0" text="+" GridPane.columnIndex="2">
                <font>
                   <Font size="43.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#update" prefHeight="100.0" prefWidth="100.0" text="update">
+               <font>
+                  <Font size="31.0" />
                </font>
             </Button>
          </children>
       </GridPane>
       <FlowPane fx:id="container" hgap="30.0" prefHeight="917.0" prefWidth="1920.0" vgap="30.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="300.0" prefWidth="300.0" text="Handy">
-               <font>
-                  <Font size="46.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="300.0" prefWidth="300.0" text="Roller">
-               <font>
-                  <Font size="46.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="300.0" prefWidth="300.0" text="Kamera">
-               <font>
-                  <Font size="46.0" />
-               </font>
-            </Button>
             <Button mnemonicParsing="false" prefHeight="300.0" prefWidth="300.0" text="Schlauch">
                <font>
                   <Font size="46.0" />
