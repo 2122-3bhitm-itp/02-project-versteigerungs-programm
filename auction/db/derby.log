@@ -1,13 +1,14 @@
-Thu Jun 23 09:00:55 CEST 2022 : Apache Derby Network Server - 10.15.2.0 - (1873585) started and ready to accept connections on port 1527
+Thu Jun 23 09:21:08 CEST 2022 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Thu Jun 23 09:01:18 CEST 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0181-8f5d-2768-0000751cb941 
-on database directory /home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@14514713 
-Loaded from file:/home/valentin/Desktop/db-derby-10.15.2.0-bin/lib/derby.jar
-java.vendor=Private Build
-user.dir=/home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db
-os.name=Linux
+Thu Jun 23 09:21:57 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0181-8f6f-a553-0000670faf61 
+on database directory C:\Users\pasca\OneDrive\Desktop\itp2\02-project-versteigerungs-programm\auction\db\db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a 
+Loaded from file:/C:/opt/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.8+10-LTS
+user.dir=C:\Users\pasca\OneDrive\Desktop\itp2\02-project-versteigerungs-programm\auction\db
+os.name=Windows 10
 os.arch=amd64
-os.version=5.13.0-51-generic
-derby.system.home=/home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db
+os.version=10.0
+derby.system.home=C:\Users\pasca\OneDrive\Desktop\itp2\02-project-versteigerungs-programm\auction\db
 Database Class Loader started - derby.database.classpath=''
