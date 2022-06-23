@@ -7,6 +7,7 @@ import at.htl.auction.entity.Benutzer;
         import java.sql.*;
 
         import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class HelloControllerTest {
 
@@ -35,14 +36,18 @@ class HelloControllerTest {
     }
     @org.junit.jupiter.api.Test
     void getLastPrice() {
+
     }
 
     @org.junit.jupiter.api.Test
-    void belongsto() {
+    void belongstotest() throws SQLException {
+        Benutzer user = new Benutzer("julian","app");
+        assertTrue(userRepository.belongsto(user, 4));
+
     }
 
     @org.junit.jupiter.api.Test
-    void register() throws SQLException {
+    void registertest() throws SQLException {
         Benutzer user = new  Benutzer("David", "skate");
         userRepository.register(user.getBenutzername(), user.getPasswort());
 
