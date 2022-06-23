@@ -22,6 +22,11 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </TextField>
+      <TextField fx:id="desc" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" promptText="Beschreibung">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </TextField>
       <TextField fx:id="preis" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" promptText="Preis" />
       <Button mnemonicParsing="false" onAction="#post" text="Upload">
          <VBox.margin>

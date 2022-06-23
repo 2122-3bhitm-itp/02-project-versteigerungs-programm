@@ -6,11 +6,14 @@ public class Anzeige {
     private String titel;
     private String Beschreibung;
 
-    public Anzeige(int anzeigeNr, double preis, String titel, String beschreibung) {
+    private String username;
+
+    public Anzeige(int anzeigeNr, double preis, String titel, String beschreibung, String username) {
         AnzeigeNr = anzeigeNr;
         this.preis = preis;
         this.titel = titel;
         Beschreibung = beschreibung;
+        this.username = username;
     }
 
     public int getAnzeigeNr() {
@@ -27,6 +30,10 @@ public class Anzeige {
 
     public String getBeschreibung() {
         return Beschreibung;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     @Override

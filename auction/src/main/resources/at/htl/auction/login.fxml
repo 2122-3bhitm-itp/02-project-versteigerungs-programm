@@ -50,7 +50,7 @@
                   <PasswordField fx:id="registerpwd1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Password" GridPane.rowIndex="1" />
                   <PasswordField fx:id="registerpwd2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Repeat Password" GridPane.rowIndex="2" />
                   <Button mnemonicParsing="false" onAction="#register" text="Register" GridPane.rowIndex="4" />
-                  <Text fx:id="registerstatus" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="3" />
+                  <Text fx:id="registerstatus" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </content></Tab>

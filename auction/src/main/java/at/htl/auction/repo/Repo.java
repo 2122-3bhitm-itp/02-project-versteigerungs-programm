@@ -8,5 +8,5 @@ public interface Repo {
 
 
 
-    void add_auction(String name, String price, Benutzer benutzer) throws SQLException;
+    void addauction(String name, String price, Benutzer benutzer, String desc) throws SQLException;
 }

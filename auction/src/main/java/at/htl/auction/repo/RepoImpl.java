@@ -13,8 +13,8 @@ public class RepoImpl implements Repo{
     }
 
     @Override
-    public void add_auction(String name, String price, Benutzer benutzer) throws SQLException {
-        PreparedStatement insert = conn.prepareStatement("insert into ANZEIGE(BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG) values('"+benutzer.getBenutzername()+"', "+price+", '"+name+"', 'adsfasdf')");
+    public void addauction(String name, String price, Benutzer benutzer, String desc) throws SQLException {
+        PreparedStatement insert = conn.prepareStatement("insert into ANZEIGE(BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG) values('"+benutzer.getBenutzername()+"', "+price+", '"+name+"', '"+desc+"')");
         insert.executeUpdate();
     }
 
@@ -50,11 +50,43 @@ public class RepoImpl implements Repo{
         ResultSet rs = pstmt.executeQuery();
 
         while(rs.next()){
-            Anzeige tempanz = new Anzeige(rs.getInt("Anzeigenr"), rs.getDouble("preis"), rs.getString("titel"), rs.getString("beschreibung"));
+            Anzeige tempanz = new Anzeige(rs.getInt("Anzeigenr"), rs.getDouble("preis"), rs.getString("titel"), rs.getString("beschreibung"), rs.getString("benutzername"));
             temp.add(tempanz);
         }
 
         return temp;
 
+    }
+
+    public double getLastPrice(double anzeigenr) throws SQLException {
+        PreparedStatement pstmt = conn.prepareStatement("select max(g.menge) as Menge from gebot g inner join ANZEIGE A on A.ANZEIGENR = g.ANZEIGENR where g.ANZEIGENR = " + anzeigenr);
+        ResultSet rs = pstmt.executeQuery();
+        while(rs.next()){
+            return rs.getDouble("Menge");
+        }
+        return 0;
+    }
+
+    public void bid(double amount, Benutzer user, int postnr) throws SQLException {
+        PreparedStatement pstmt = conn.prepareStatement("insert into gebot (anzeigeNr, bieter, menge) values ("+postnr+", '"+user.getBenutzername()+"', "+amount+")");
+        pstmt.executeUpdate();
+    }
+
+    public boolean belongsto(Benutzer user, int postNr) throws SQLException {
+        PreparedStatement pstmt = conn.prepareStatement("select * from ANZEIGE where ANZEIGENR = " + postNr + " and BENUTZERNAME = '" + user.getBenutzername() + "'");
+        ResultSet rs = pstmt.executeQuery();
+        while(rs.next()){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean sell(Anzeige anzeige) throws SQLException {
+        PreparedStatement deletebids = conn.prepareStatement("delete from GEBOT where ANZEIGENR = " + anzeige.getAnzeigeNr());
+        deletebids.executeUpdate();
+
+        PreparedStatement pstmt = conn.prepareStatement("delete from anzeige where ANZEIGENR = " + anzeige.getAnzeigeNr());
+        pstmt.executeUpdate();
+        return true;
     }
 }

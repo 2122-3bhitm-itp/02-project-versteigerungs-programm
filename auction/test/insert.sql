@@ -9,18 +9,13 @@ insert into benutzer (benutzername, passwort) values('PascalG', '9101');
 insert into benutzer (benutzername, passwort) values('TeoM', '1121');
 
 
-insert into anzeige (anzeigeNr, BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
-values (101, 'ValentinW', 98.99, 'Objektiv', 'Altes Sony Objektiv, stark benutzt');
-insert into anzeige (anzeigeNr, BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
-values (102, 'TeoM', 160, 'Hantelbank', 'Hantelbank vor einem Jahr gekauft, jetzt gehe ich wieder ins Fitnessstudio, weil Corona vorbei ist.');
-insert into anzeige (anzeigeNr, BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
-values (103, 'JulianJ', 7.99, 'Kochtopf', 'Alter Kochtopf, wenig verwendet');
 
-insert into gebot (GEBOTNR, ANZEIGENR, BIETER, "GebotsPreis")
-VALUES (10, 101, 'JulianJ', 110);
-insert into gebot (GEBOTNR, ANZEIGENR, BIETER, "GebotsPreis")
-VALUES (11, 102, 'JulianJ', 165);
-insert into gebot (GEBOTNR, ANZEIGENR, BIETER, "GebotsPreis")
-VALUES (12, 101, 'PascalG', 120);
+insert into anzeige (BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
+values ('ValentinW', 98.99, 'Objektiv', 'Altes Sony Objektiv, stark benutzt');
+insert into anzeige (BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
+values ('TeoM', 160, 'Hantelbank', 'Hantelbank vor einem Jahr gekauft, jetzt gehe ich wieder ins Fitnesstudio, weil Corona vorbei ist.');
+insert into anzeige (BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG)
+values ('JulianJ', 7.99, 'Kochtopf', 'Alter Kochtopf, wenig verwendet');
+
 
 /*Beziehungen testen*/
