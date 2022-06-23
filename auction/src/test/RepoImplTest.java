@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class HelloControllerTest {
 
 
-    RepoImpl userRepository;
+    RepoImpl userRepository = new RepoImpl();
     Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/db;create=true", "app", "app");
 
     HelloControllerTest() throws SQLException {
@@ -35,8 +35,9 @@ class HelloControllerTest {
 
     }
     @org.junit.jupiter.api.Test
-    void getLastPrice() {
+    void getLastPricetest() throws SQLException {
 
+        assertEquals(12, userRepository.getLastPrice(12));
     }
 
     @org.junit.jupiter.api.Test
