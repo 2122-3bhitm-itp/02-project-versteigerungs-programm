@@ -226,3 +226,27 @@ Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
 - Vorgaben vom Auftraggeber
 
 
+== Doku
+
+ - Wenn man das Programm startet, erscheint ein Fenster, wo man sich entweder anmelden oder registrieren kann.
+
+image::login.jpg[align="center"]
+image::register.jpg[align="center"]
+
+ - Nach dem Register/Login öffnet sich die Main-Stage vom Programm, wo Auktionen erstellt, oder Produkte gekauft werden können.
+
+image::main.jpg[align="center"]
+
+ - Sobald man auf ein beliebiges Produkt klickt, öffnet sich das nächste Fenster, wo geboten werden kann.
+
+image::bid.jpg[align="center"]
+
+ - Auf der Main-Stage befindet sich außerdem rechts oben ein "plus", wo eine neue Auktion erstellt werden kann.
+
+image::create.jpg[align="center"]
+
+
+- Diese ist dann natürlich auch auf der Main-Stage sichtbar.
+image::main2.jpg[]
+
+
