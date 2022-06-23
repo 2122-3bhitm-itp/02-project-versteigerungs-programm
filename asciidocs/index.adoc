@@ -228,6 +228,12 @@ Erstellen eines benutzerfreundlichen und sicheren Versteigerungsprogramm.
 
 == Doku
 
+=== CLD
+image::cld.png[]
+
+=== ERD
+image::erd.png[]
+
  - Wenn man das Programm startet, erscheint ein Fenster, wo man sich entweder anmelden oder registrieren kann.
 
 image::login.jpg[align="center"]
@@ -246,7 +252,13 @@ image::bid.jpg[align="center"]
 image::create.jpg[align="center"]
 
 
-- Diese ist dann natürlich auch auf der Main-Stage sichtbar.
+- Diese ist dann natürlich auch auf der Main-Stage sichtbar. Die Posts, die man selbst gemacht hat sind farblich markiert.
+
+
+
 image::main2.jpg[]
 
 
+- Wenn einem der Preis passt, kann man seine eigenen Posts verkaufen, dann kann niemand mehr bieten, und er verschwindet von der Startseite
+
+image::sold.png[]
