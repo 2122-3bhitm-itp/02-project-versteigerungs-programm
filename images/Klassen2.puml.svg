@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="347px" preserveAspectRatio="none" style="width:440px;height:347px;" version="1.1" viewBox="0 0 440 347" width="440px" zoomAndPan="magnify"><defs><filter height="300%" id="fc4wsm35lyto9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8a8146ff89b20cc2efd6e16e3c0a6394]
+class Register--><rect fill="#FEFECE" filter="url(#fc4wsm35lyto9)" height="73.6094" id="Register" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="190.5" y="8"/><ellipse cx="212.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M215.2188,29.6406 Q214.6406,29.9375 214,30.0781 Q213.3594,30.2344 212.6563,30.2344 Q210.1563,30.2344 208.8281,28.5938 Q207.5156,26.9375 207.5156,23.8125 Q207.5156,20.6875 208.8281,19.0313 Q210.1563,17.375 212.6563,17.375 Q213.3594,17.375 214,17.5313 Q214.6563,17.6875 215.2188,17.9844 L215.2188,20.7031 Q214.5938,20.125 214,19.8594 Q213.4063,19.5781 212.7813,19.5781 Q211.4375,19.5781 210.75,20.6563 Q210.0625,21.7188 210.0625,23.8125 Q210.0625,25.9063 210.75,26.9844 Q211.4375,28.0469 212.7813,28.0469 Q213.4063,28.0469 214,27.7813 Q214.5938,27.5 215.2188,26.9219 L215.2188,29.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="227.75" y="28.1543">Register</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="191.5" x2="288.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="87" x="196.5" y="54.2104">Date startDate;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="196.5" y="67.0151">Date endDate;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="191.5" x2="288.5" y1="73.6094" y2="73.6094"/><!--MD5=[72136138052d025cffdce3c22fbd185f]
+class Product--><rect fill="#FEFECE" filter="url(#fc4wsm35lyto9)" height="73.6094" id="Product" style="stroke: #A80036; stroke-width: 1.5;" width="88" x="196" y="142"/><ellipse cx="214.15" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M217.1188,163.6406 Q216.5406,163.9375 215.9,164.0781 Q215.2594,164.2344 214.5563,164.2344 Q212.0563,164.2344 210.7281,162.5938 Q209.4156,160.9375 209.4156,157.8125 Q209.4156,154.6875 210.7281,153.0313 Q212.0563,151.375 214.5563,151.375 Q215.2594,151.375 215.9,151.5313 Q216.5563,151.6875 217.1188,151.9844 L217.1188,154.7031 Q216.4938,154.125 215.9,153.8594 Q215.3063,153.5781 214.6813,153.5781 Q213.3375,153.5781 212.65,154.6563 Q211.9625,155.7188 211.9625,157.8125 Q211.9625,159.9063 212.65,160.9844 Q213.3375,162.0469 214.6813,162.0469 Q215.3063,162.0469 215.9,161.7813 Q216.4938,161.5 217.1188,160.9219 L217.1188,163.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="228.85" y="162.1543">Product</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="197" x2="283" y1="174" y2="174"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="202" y="188.2104">String name;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="202" y="201.0151">int newValue;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="197" x2="283" y1="207.6094" y2="207.6094"/><!--MD5=[b71fd923c3a381da65573ecc5dacd522]
+class Tenderer--><rect fill="#FEFECE" filter="url(#fc4wsm35lyto9)" height="60.8047" id="Tenderer" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="6" y="276"/><ellipse cx="31.35" cy="292" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M34.3188,297.6406 Q33.7406,297.9375 33.1,298.0781 Q32.4594,298.2344 31.7563,298.2344 Q29.2563,298.2344 27.9281,296.5938 Q26.6156,294.9375 26.6156,291.8125 Q26.6156,288.6875 27.9281,287.0313 Q29.2563,285.375 31.7563,285.375 Q32.4594,285.375 33.1,285.5313 Q33.7563,285.6875 34.3188,285.9844 L34.3188,288.7031 Q33.6938,288.125 33.1,287.8594 Q32.5063,287.5781 31.8813,287.5781 Q30.5375,287.5781 29.85,288.6563 Q29.1625,289.7188 29.1625,291.8125 Q29.1625,293.9063 29.85,294.9844 Q30.5375,296.0469 31.8813,296.0469 Q32.5063,296.0469 33.1,295.7813 Q33.6938,295.5 34.3188,294.9219 L34.3188,297.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="57" x="47.65" y="296.1543">Tenderer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="117" y1="308" y2="308"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="12" y="322.2104">String username;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="117" y1="328.8047" y2="328.8047"/><!--MD5=[fdf77080336e19d0ff7a859826ef8467]
+class Salesperson--><rect fill="#FEFECE" filter="url(#fc4wsm35lyto9)" height="60.8047" id="Salesperson" style="stroke: #A80036; stroke-width: 1.5;" width="110" x="319" y="148.5"/><ellipse cx="334" cy="164.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M336.9688,170.1406 Q336.3906,170.4375 335.75,170.5781 Q335.1094,170.7344 334.4063,170.7344 Q331.9063,170.7344 330.5781,169.0938 Q329.2656,167.4375 329.2656,164.3125 Q329.2656,161.1875 330.5781,159.5313 Q331.9063,157.875 334.4063,157.875 Q335.1094,157.875 335.75,158.0313 Q336.4063,158.1875 336.9688,158.4844 L336.9688,161.2031 Q336.3438,160.625 335.75,160.3594 Q335.1563,160.0781 334.5313,160.0781 Q333.1875,160.0781 332.5,161.1563 Q331.8125,162.2188 331.8125,164.3125 Q331.8125,166.4063 332.5,167.4844 Q333.1875,168.5469 334.5313,168.5469 Q335.1563,168.5469 335.75,168.2813 Q336.3438,168 336.9688,167.4219 L336.9688,170.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="78" x="348" y="168.6543">Salesperson</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="320" x2="428" y1="180.5" y2="180.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="325" y="194.7104">String name;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="320" x2="428" y1="201.3047" y2="201.3047"/><!--MD5=[af8ed831b3fe9dbd380fec6c597723ab]
+class Offer--><rect fill="#FEFECE" filter="url(#fc4wsm35lyto9)" height="60.8047" id="Offer" style="stroke: #A80036; stroke-width: 1.5;" width="62" x="99" y="148.5"/><ellipse cx="114" cy="164.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M116.9688,170.1406 Q116.3906,170.4375 115.75,170.5781 Q115.1094,170.7344 114.4063,170.7344 Q111.9063,170.7344 110.5781,169.0938 Q109.2656,167.4375 109.2656,164.3125 Q109.2656,161.1875 110.5781,159.5313 Q111.9063,157.875 114.4063,157.875 Q115.1094,157.875 115.75,158.0313 Q116.4063,158.1875 116.9688,158.4844 L116.9688,161.2031 Q116.3438,160.625 115.75,160.3594 Q115.1563,160.0781 114.5313,160.0781 Q113.1875,160.0781 112.5,161.1563 Q111.8125,162.2188 111.8125,164.3125 Q111.8125,166.4063 112.5,167.4844 Q113.1875,168.5469 114.5313,168.5469 Q115.1563,168.5469 115.75,168.2813 Q116.3438,168 116.9688,167.4219 L116.9688,170.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="128" y="168.6543">Offer</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="100" x2="160" y1="180.5" y2="180.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="50" x="105" y="194.7104">int price;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="100" x2="160" y1="201.3047" y2="201.3047"/><ellipse cx="62" cy="179" fill="#000000" rx="2" ry="2" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[345e09914f527a8cf3a39461615899b8]
+link Register to Product--><path d="M240,82.07 C240,100.69 240,123.35 240,141.97 " fill="none" id="Register-Product" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="232.4203" y="101.5621">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="231.2625" y="130.8749">1</text><!--MD5=[4440bab1be2d155b85258e74f8ad05b4]
+link Register to Salesperson--><path d="M276.62,82.07 C297.69,102.83 323.86,128.61 343.76,148.21 " fill="none" id="Register-Salesperson" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="275.1055" y="101.5621">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="328.698" y="137.4134">1</text><!--MD5=[4cbebf4a0e613e8ebee0a42f8d58601a]
+link Register to apoint22--><path d="M190.37,67.23 C156.32,83.72 111.88,109.29 81,142 C70.13,153.51 63.74,172.44 62.31,176.99 " fill="none" id="Register-apoint22" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="174.4931" y="66.4988">1</text><!--MD5=[eca0d95b33bf0d07931300270ddc589d]
+link apoint22 to Tenderer--><path d="M62,181.41 C62,190.57 62,242.28 62,276 " fill="none" id="apoint22-Tenderer" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="53.125" y="264.7903">1</text><!--MD5=[77f1ce2f62a918e702371f01b7454565]
+link apoint22 to Offer--><path d="M64.12,179 C75.7,179 87.28,179 98.86,179 " fill="none" id="apoint22-Offer" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[36a2fdc21491f61c73ebd3173102dbb7]
+@startuml
+
+class Register{
+    Date startDate;
+    Date endDate;
+}
+
+class Product{
+    String name;
+    int newValue;
+}
+
+class Tenderer{
+    String username;
+}
+
+class Salesperson{
+    String name;
+}
+
+class Offer{
+    int price;
+}
+
+Register"*" - - "1" Product
+
+Register"*" - - "1"Salesperson
+
+Register"1" - - "1"Tenderer
+
+(Register, Tenderer) ... Offer
+
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 10:24:54 GMT 2019)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

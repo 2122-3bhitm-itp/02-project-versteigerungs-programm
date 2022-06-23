@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+left to right direction
+
+abstract class Person{
+user_ID:int
+name:String
+password:String
+}
+
+class Anbieter
+
+class Admin
+
+class Kunde
+
+class AuktionsProdukt{
+product_ID:int
+seller: String
+highestBid: int
+highestBidder: String
+sellDate: DateTime
+}
+
+Person <|-- Anbieter
+Person <|-- Kunde
+Person <|-- Admin
+Anbieter "*" -- "1" Admin
+Admin "1" -- "*" Kunde
+Kunde "1" -- "*" AuktionsProdukt
+Anbieter "1" -- "*" AuktionsProdukt
+@enduml
