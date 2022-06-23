@@ -11,7 +11,7 @@ import at.htl.auction.entity.Benutzer;
 class HelloControllerTest {
 
 
-    private RepoImpl userRepository;
+    RepoImpl userRepository;
     Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/db;create=true", "app", "app");
 
     HelloControllerTest() throws SQLException {
