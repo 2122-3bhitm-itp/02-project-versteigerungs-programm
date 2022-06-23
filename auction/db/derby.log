@@ -1,13 +1,13 @@
-Thu Jun 23 08:07:30 CEST 2022 : Apache Derby Network Server - 10.15.2.0 - (1873585) started and ready to accept connections on port 1527
+Thu Jun 23 09:00:55 CEST 2022 : Apache Derby Network Server - 10.15.2.0 - (1873585) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Thu Jun 23 08:07:36 CEST 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0181-8f2c-3d0b-00002cab1c9b 
-on database directory /home/valentin/Desktop/ITP/projekt/clone 4/02-project-versteigerungs-programm/auction/db/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@14514713 
+Thu Jun 23 09:01:18 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0181-8f5d-2768-0000751cb941 
+on database directory /home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db/db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@14514713 
 Loaded from file:/home/valentin/Desktop/db-derby-10.15.2.0-bin/lib/derby.jar
 java.vendor=Private Build
-user.dir=/home/valentin/Desktop/ITP/projekt/clone 4/02-project-versteigerungs-programm/auction/db
+user.dir=/home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db
 os.name=Linux
 os.arch=amd64
 os.version=5.13.0-51-generic
-derby.system.home=/home/valentin/Desktop/ITP/projekt/clone 4/02-project-versteigerungs-programm/auction/db
+derby.system.home=/home/valentin/Desktop/testclone-projekt/02-project-versteigerungs-programm/auction/db
 Database Class Loader started - derby.database.classpath=''
