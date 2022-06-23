@@ -13,7 +13,7 @@ public class RepoImpl implements Repo{
     }
 
     @Override
-    public void addauction(String name, String price, Benutzer benutzer) throws SQLException {
+    public void add_auction(String name, String price, Benutzer benutzer) throws SQLException {
         PreparedStatement insert = conn.prepareStatement("insert into ANZEIGE(BENUTZERNAME, PREIS, TITEL, BESCHREIBUNG) values('"+benutzer.getBenutzername()+"', "+price+", '"+name+"', 'adsfasdf')");
         insert.executeUpdate();
     }
