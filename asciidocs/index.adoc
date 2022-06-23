@@ -1,4 +1,4 @@
-= Projektauftrag
+= Auktion Doku
 Goldmann Pascal, Jaklitsch Julian, Mihaescu Teofan, Scharrer Raphael, Weinhäupl Valentin
 1.0.0, 2021-11-14
 ifndef::imagesdir[:imagesdir: images]
